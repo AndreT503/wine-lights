@@ -1,0 +1,49 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [90],
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "editor.cursorBlinking": "solid",
+  "workbench.iconTheme": "material-icon-theme",
+  "git.enableSmartCommit": true,
+  "editor.autoIndent": true,
+  "debug.openExplorerOnEnd": true,
+
+  "explorer.openEditors.visible": 0,
+  "editor.minimap.enabled": false,
+  "html.autoClosingTags": false,
+  "git.confirmSync": false,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 90,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tslintIntegration": true,
+  "prettier.disableLanguages": ["html"],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#ef0d17",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#14d40c",
+    "activityBarBadge.foreground": "#15202b",
+    "titleBar.activeBackground": "#bf0a12",
+    "titleBar.inactiveBackground": "#bf0a1299",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#bf0a12",
+    "statusBarItem.hoverBackground": "#ef0d17",
+    "statusBar.foreground": "#e7e7e7",
+    "liveServer.settings.port": 5002,
+    "liveServer.settings.CustomBrowser" : "chrome",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
+    "liveServer.settings.NoBrowser" : false,
+    "liveServer.settings.ignoreFiles" : [
+            ".vscode/**",
+            "**/*.scss",
+            "**/*.sass"
+    ]
+
+}
+}
