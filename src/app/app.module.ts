@@ -2,17 +2,26 @@ import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BrowserModule } from '@angular/platform-browser'
+import { HomeComponent } from './home/home.component'
+import { HttpClientModule } from '@angular/common/http'
+import { InventoryComponent } from './inventory/inventory.component'
+import { InventoryHomeComponent } from './inventory/inventory-home/inventory-home.component'
 import { InventoryModule } from './inventory/inventory.module'
 import { ManagerModule } from './manager/manager.module'
 import { MaterialModule } from './material.module'
 import { NgModule } from '@angular/core'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { PosModule } from './pos/pos.module'
 import { UserModule } from './user/user.module'
-import { HomeComponent } from './home/home.component'
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PageNotFoundComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    InventoryComponent,
+    InventoryHomeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +31,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     InventoryModule,
     PosModule,
     UserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
