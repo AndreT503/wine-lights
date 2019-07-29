@@ -32,17 +32,17 @@
       "**/*.scss",
       "**/*.sass"
     ],
-    "activityBar.background": "#ef0d17",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#14d40c",
-    "activityBarBadge.foreground": "#15202b",
-    "titleBar.activeBackground": "#bf0a12",
-    "titleBar.inactiveBackground": "#bf0a1299",
+    "activityBar.background": "#ea764f",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#0e7227",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#e55221",
+    "titleBar.inactiveBackground": "#e5522199",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#bf0a12",
-    "statusBarItem.hoverBackground": "#ef0d17",
+    "statusBar.background": "#e55221",
+    "statusBarItem.hoverBackground": "#ea764f",
     "statusBar.foreground": "#e7e7e7"
   }
 }

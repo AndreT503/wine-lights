@@ -7,14 +7,14 @@ import { BoundElementProperty } from '@angular/compiler'
   template: `
     <mat-toolbar color="accent" fxLayoutGap="8px">
       <a mat-button routerLink="/manager/home" routerLinkActive="active-link">
-        Manager's Dashboard</a
-      >
+        Manager's Dashboard
+        </a>
       <a mat-button routerLink="/manager/users" routerLinkActive="active-link">
-        User Management</a
-      >
+        User Management
+        </a>
       <a mat-button routerLink="/manager/receipts" routerLinkActive="active-link">
-        Reeipt Lookup</a
-      >
+        Reeipt Lookup
+        </a>
       <span class="flex-spacer"></span>
       <button
         mat-mini-fab
