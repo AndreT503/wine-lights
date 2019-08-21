@@ -7,7 +7,7 @@ import { MaterialModule } from '../material.module'
 import { NgModule } from '@angular/core'
 import { ProductsComponent } from './products/products.component'
 import { StockEntryComponent } from './stock-entry/stock-entry.component'
-
+import
 @NgModule({
   declarations: [
     InventoryComponent,
@@ -15,6 +15,8 @@ import { StockEntryComponent } from './stock-entry/stock-entry.component'
     CategoriesComponent,
     ProductsComponent,
     StockEntryComponent,
+    MatIcon,
+    MatToolbar,
   ],
   imports: [CommonModule, InventoryRoutingModule, MaterialModule],
 })

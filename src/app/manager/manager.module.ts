@@ -1,6 +1,8 @@
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MatIcon, MatToolbar } from '@angular/material'
 
 import { CommonModule } from '@angular/common'
+import { FlexLayoutModule } from '@angular/flex-layout'
 import { ManagerComponent } from './manager.component'
 import { ManagerHomeComponent } from './manager-home/manager-home.component'
 import { ManagerRoutingModule } from './manager-routing.module'
@@ -15,6 +17,8 @@ import { UserManagementComponent } from './user-management/user-management.compo
     ManagerComponent,
     UserManagementComponent,
     ReceiptLookupComponent,
+    MatIcon,
+    MatToolbar,
   ],
   imports: [
     CommonModule,
@@ -22,6 +26,7 @@ import { UserManagementComponent } from './user-management/user-management.compo
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    FlexLayoutModule,
   ],
 })
 export class ManagerModule {}
