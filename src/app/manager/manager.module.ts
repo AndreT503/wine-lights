@@ -17,8 +17,6 @@ import { UserManagementComponent } from './user-management/user-management.compo
     ManagerComponent,
     UserManagementComponent,
     ReceiptLookupComponent,
-    MatIcon,
-    MatToolbar,
   ],
   imports: [
     CommonModule,
