@@ -1,3 +1,5 @@
+import { MatIcon, MatToolbar } from '@angular/material'
+
 import { CategoriesComponent } from './categories/categories.component'
 import { CommonModule } from '@angular/common'
 import { InventoryComponent } from './inventory.component'

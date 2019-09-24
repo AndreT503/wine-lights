@@ -11,13 +11,18 @@ import { TestBed, async } from '@angular/core/testing'
 import { AppComponent } from './app.component'
 import { DomSanitizer } from '@angular/platform-browser'
 import { MatIconRegistry } from '@angular/material'
-import { ObservableMedia } from '@angular/flex-layout'
+import { MediaObserver } from '@angular/flex-layout'
 import { RouterTestingModule } from '@angular/router/testing'
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: commonTestingModules,
+      providers: commonTestingProviders.concat([
+        { provide: MediaObserver, useClass: ObservableMediaFake },
+        { provide: MatIconRegistry, useClass: MatIconRegistryFake },
+        { provide: DomSanitizer, useClass: DomSanitizerFake },
+      ]),
       declarations: [AppComponent],
     }).compileComponents()
   }))
@@ -31,7 +36,7 @@ describe('AppComponent', () => {
   TestBed.configureTestingModule({
     imports: commonTestingModules,
     providers: commonTestingProviders.concat([
-      { provide: ObservableMedia, useClass: ObservableMediaFake },
+      { provide: MediaObserver, useClass: ObservableMediaFake },
       { provide: MatIconRegistry, useClass: MatIconRegistryFake },
       { provide: DomSanitizer, useClass: DomSanitizerFake },
     ]),

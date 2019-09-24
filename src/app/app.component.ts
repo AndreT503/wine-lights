@@ -1,11 +1,13 @@
-import { Component } from '@angular/core'
+import { Component, OnInit, ViewChild } from '@angular/core'
+import { MediaObserver } from '@angular/flex-layout'
+import { MatIconRegistry, MatSidenav } from '@angular/material'
 import { DomSanitizer } from '@angular/platform-browser'
-import { MatIconRegistry } from '@angular/material/icon'
 
 @Component({
   selector: 'app-root',
   template: `
     <mat-toolbar color="primary" fxLayoutGap="8px">
+      <mat-icon svgIcon="wineLights"></mat-icon>
       <button mat-icon-button><mat-icon>menu</mat-icon></button>
 
       <a mat-button routerLink="/home">

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core'
 
-import { BoundElementProperty } from '@angular/compiler'
-
 @Component({
   selector: 'app-manager',
   template: `

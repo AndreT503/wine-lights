@@ -1,4 +1,11 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed, async } from '@angular/core/testing'
+import {
+  DomSanitizerFake,
+  MatIconRegistryFake,
+  ObservableMediaFake,
+  commonTestingModules,
+  commonTestingProviders,
+} from '../common/common.testing'
 
 import { InventoryComponent } from './inventory.component'
 
@@ -8,6 +15,7 @@ describe('InventoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: commonTestingModules,
       declarations: [InventoryComponent],
     }).compileComponents()
   }))

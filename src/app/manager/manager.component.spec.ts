@@ -1,6 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed, async } from '@angular/core/testing'
+import { commonTestingModules, commonTestingProviders } from '../common/common.testing'
 
 import { ManagerComponent } from './manager.component'
+import { MatIconRegistry } from '@angular/material'
 
 describe('ManagerComponent', () => {
   let component: ManagerComponent
@@ -9,6 +11,8 @@ describe('ManagerComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ManagerComponent],
+      providers: commonTestingProviders,
+      imports: commonTestingModules,
     }).compileComponents()
   }))
 
