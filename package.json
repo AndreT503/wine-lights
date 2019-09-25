@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "npm run standardize && ng serve --port 5001 -o",
     "build": "npm run standardize && ng build --prod",
+    "build:prod": "ng build --prod",
     "build:ci": "docker build -f Dockerfile.integration . t $npm_package_config_imageRepo:latest",
     "test": "ng test",
     "test:prod": "npm test -- --watch=false",
