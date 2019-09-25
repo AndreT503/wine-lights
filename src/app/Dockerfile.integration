@@ -2,7 +2,7 @@ FROM duluca/minimal-node-build-env:8.9.4 as builder
 
 # project variables
 ENV SRC_DIR /usr/src
-ENV GIT_REPO https://github.com/andret503/wine-lights.git
+ENV GIT_REPO https://github.com/AndreT503/wine-lights.git
 ENV SRC_CODE_LOCATION .
 ENV BUILD_SCRIPT build:prod
 
@@ -10,15 +10,15 @@ ENV BUILD_SCRIPT build:prod
 RUN mkdir -p $SRC_DIR
 WORKDIR $SRC_DIR
 # if necessary, do SSH setup here or copy source code from local or CI environment
-ARG CACHEBUST=1
 RUN git clone $GIT_REPO .
+# COPY $SRC_CODE_LOCATION .
 
 RUN npm install
 RUN npm run $BUILD_SCRIPT
 
 FROM slapers/alpine-node-chromium as tester
 ENV BUILDER_SRC_DIR /usr/src
-ENV SRC_DIR /usr/SRC_DIR
+ENV SRC_DIR /usr/src
 ENV TEST_SCRIPT test:prod
 
 RUN mkdir -p $SRC_DIR
