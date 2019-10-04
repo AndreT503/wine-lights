@@ -9,6 +9,7 @@
     "build:prod": "ng build --prod",
     "build:ci": "docker build -f Dockerfile.integration . -t $npm_package_config_imageRepo:latest",
     "test": "ng test",
+    "codecover": "npx ng test --browsers ChromiumNoSandbox --watch=false --code-coverage",
     "test:prod": "npm test -- --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
