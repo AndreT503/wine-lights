@@ -1,27 +1,30 @@
 {
   "editor.tabSize": 2,
-  "editor.rulers": [90],
+  "editor.rulers": [
+    90
+  ],
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "onFocusChange",
   "editor.cursorBlinking": "solid",
   "workbench.iconTheme": "material-icon-theme",
   "git.enableSmartCommit": true,
-  "editor.autoIndent": true,
+  "editor.autoIndent": "full",
   "debug.openExplorerOnEnd": true,
-
   "explorer.openEditors.visible": 0,
   "editor.minimap.enabled": false,
   "html.autoClosingTags": false,
   "git.confirmSync": false,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "prettier.printWidth": 90,
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.tslintIntegration": true,
-  "prettier.disableLanguages": ["html"],
+  "prettier.disableLanguages": [
+    "html"
+  ],
   "workbench.colorCustomizations": {
     "liveServer.settings.port": 5002,
     "liveServer.settings.CustomBrowser": "chrome",
@@ -33,6 +36,7 @@
       "**/*.sass"
     ],
     "activityBar.background": "#ea764f",
+    "activityBar.activeBorder": "#0e7227",
     "activityBar.foreground": "#15202b",
     "activityBar.inactiveForeground": "#15202b99",
     "activityBarBadge.background": "#0e7227",
@@ -45,5 +49,20 @@
     "statusBarItem.hoverBackground": "#ea764f",
     "statusBar.foreground": "#e7e7e7"
   },
-  "peacock.color": "#e55221"
+  "peacock.color": "#e55221",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.tslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "npm.enableScriptExplorer": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "auto-close-tag.SublimeText3Mode": true,
+  "gitlens.menus": {
+    "editorGroup": false
+  },
+  "ng-evergreen.upgradeChannel": "Latest"
 }
